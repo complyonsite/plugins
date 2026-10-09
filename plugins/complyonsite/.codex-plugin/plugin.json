@@ -1,0 +1,28 @@
+{
+  "name": "complyonsite",
+  "version": "0.3.0",
+  "description": "EWC waste codes, waste paperwork, HAVS and noise exposure, first aid, power tool data and HSE construction statistics. Anonymous and read-only.",
+  "author": { "name": "ComplyOnSite", "url": "https://complyonsite.com" },
+  "homepage": "https://complyonsite.com/docs/mcp",
+  "repository": "https://github.com/complyonsite/plugins",
+  "license": "MIT",
+  "keywords": ["ewc", "waste", "havs", "noise", "first-aid", "construction", "uk"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ComplyOnSite",
+    "shortDescription": "UK construction and waste tools",
+    "developerName": "ComplyOnSite",
+    "category": "Productivity",
+    "websiteURL": "https://complyonsite.com/docs/mcp",
+    "privacyPolicyURL": "https://complyonsite.com/legal/privacy",
+    "termsOfServiceURL": "https://complyonsite.com/legal/terms",
+    "composerIcon": "./assets/composer.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "What EWC code is a skip of mixed rubble, plasterboard and timber?",
+      "Breaker for 90 minutes and grinder for 45: is he over the vibration limit?",
+      "30 people on site and 2 first-aiders: is that enough?"
+    ]
+  }
+}

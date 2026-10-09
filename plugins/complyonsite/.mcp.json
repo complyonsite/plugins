@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "complyonsite": {
+      "type": "http",
+      "url": "https://mcp.complyonsite.com/mcp"
+    }
+  }
+}

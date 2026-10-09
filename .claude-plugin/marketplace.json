@@ -1,0 +1,14 @@
+{
+  "name": "complyonsite",
+  "description": "ComplyOnSite tools for UK construction and waste work.",
+  "owner": { "name": "ComplyOnSite", "url": "https://complyonsite.com" },
+  "plugins": [
+    {
+      "name": "complyonsite",
+      "source": "./plugins/complyonsite",
+      "description": "EWC waste codes, waste paperwork, HAVS and noise exposure, first aid, power tool data and HSE construction statistics.",
+      "category": "productivity",
+      "homepage": "https://complyonsite.com/docs/mcp"
+    }
+  ]
+}

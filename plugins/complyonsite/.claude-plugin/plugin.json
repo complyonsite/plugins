@@ -1,0 +1,10 @@
+{
+  "name": "complyonsite",
+  "version": "0.3.0",
+  "description": "EWC waste codes, waste paperwork, HAVS and noise exposure, first aid, power tool data and HSE construction statistics. Anonymous and read-only.",
+  "author": { "name": "ComplyOnSite", "url": "https://complyonsite.com" },
+  "homepage": "https://complyonsite.com/docs/mcp",
+  "repository": "https://github.com/complyonsite/plugins",
+  "license": "MIT",
+  "keywords": ["ewc", "waste", "havs", "noise", "first-aid", "construction", "uk"]
+}
