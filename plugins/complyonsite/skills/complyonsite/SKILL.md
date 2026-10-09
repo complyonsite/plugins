@@ -22,6 +22,7 @@ The `complyonsite` MCP server gives calculations and reference data for UK const
 
 ## How to use them
 
+- Waste codes: search one to three material words at a time (“plasterboard”, “treated wood”), not the person's sentence. Search each material in a mixed load separately. If `match.quality` is `weak` or `none`, try the main material or a synonym rather than guessing.
 - Waste notes: find the codes with `ewc_search`, then pass the chosen codes to `start_document`. A mirror entry needs an assessment before choosing between the hazardous and non-hazardous code; say so.
 - HAVS: give each tool an HSE `category` (and `variant` where the category has several) when the person has no vibration figure. Use the tool's own m/s² figure when they have one. Time is trigger time.
 - Noise: task levels are LAeq in dB(A). For noise at the ear, add the protector's SNR or H/M/L and each protected task's C-weighted level.
@@ -29,6 +30,6 @@ The `complyonsite` MCP server gives calculations and reference data for UK const
 
 ## Presenting answers
 
-- Give the figure or code first, in plain words, then what it means for the person.
+- Each result starts with a `summary`. Give the figure or code first, in plain words, then what it means for the person.
 - Results include `calculatorUrl`, `url` or `downloads`. Show them as links: the calculator opens the same calculation to adjust; `start_document` links open the form with the codes or job filled in; `downloads` are a blank template and a worked example as PDFs.
 - Keep each result's `limit` in the answer when it matters, for example that a code search is not a waste classification.
