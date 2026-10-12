@@ -26,10 +26,13 @@ The `complyonsite` MCP server gives calculations and reference data for UK const
 - Waste notes: find the codes with `ewc_search`, then pass the chosen codes to `start_document`. A mirror entry needs an assessment before choosing between the hazardous and non-hazardous code; say so.
 - HAVS: give each tool an HSE `category` (and `variant` where the category has several) when the person has no vibration figure. Use the tool's own m/s² figure when they have one. Time is trigger time.
 - Noise: task levels are LAeq in dB(A). For noise at the ear, add the protector's SNR or H/M/L and each protected task's C-weighted level.
+- Noise thresholds are two separate checks. The 80 and 85 dB(A) action values compare noise before hearing protection (`levels`); the 87 dB(A) limit compares noise at the ear, after protection (`limitCheck`). Never list 87 as a third step after 80 and 85.
+- Not covered: live register checks (waste carrier, broker or dealer registration, permits, exemptions), submitting anything to a regulator, and converting or reading SDS files. Say so first, without asking for details, and point to the regulator's public register or service.
 - If an answer depends on something the person has not said (the nation, how many people per shift, trigger time), make a sensible assumption, state it, and ask.
 
 ## Presenting answers
 
 - Each result starts with a `summary`. Give the figure or code first, in plain words, then what it means for the person.
+- Where the host shows the result card, the person already sees its figures, thresholds and buttons. Don't repeat them as prose or a table; add only what the card doesn't show, such as the next step for their situation.
 - Results include `calculatorUrl`, `url` or `downloads`. Show them as links: the calculator opens the same calculation to adjust; `start_document` links open the form with the codes or job filled in; `downloads` are a blank template and a worked example as PDFs.
 - Keep each result's `limit` in the answer when it matters, for example that a code search is not a waste classification.
