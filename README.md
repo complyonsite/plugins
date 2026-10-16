@@ -1,44 +1,25 @@
 # ComplyOnSite plugins
 
-A plugin for Claude Code and Codex that adds the [ComplyOnSite MCP server](https://complyonsite.com/docs/mcp) and a short skill telling the assistant when to use it.
+Read-only tools for UK construction and waste work: EWC code search, waste paperwork guidance, HAVS and noise exposure estimates, first-aid cover, RAMS templates, power-tool reference data and HSE statistics.
 
-The server answers UK construction and waste questions: EWC waste codes, which waste paperwork a movement needs, links to start a waste transfer note, consignment note or RAMS with blank and worked-example PDFs, daily HAVS and noise exposure, first-aid cover, power tool vibration and noise, and HSE construction injury statistics. No account or key. It only reads; it never saves, signs or sends anything.
+See the [ComplyOnSite plugin guide](plugins/complyonsite/README.md) for capabilities, example questions, limits, installation and support.
 
-## Claude Code
+## Install
+
+Claude Code:
 
 ```sh
 claude plugin marketplace add complyonsite/plugins
 claude plugin install complyonsite@complyonsite
 ```
 
-Or inside a session: `/plugin marketplace add complyonsite/plugins`, then `/plugin install complyonsite@complyonsite`.
-
-## Codex
+Codex:
 
 ```sh
 codex plugin marketplace add complyonsite/plugins
 codex plugin add complyonsite@complyonsite
 ```
 
-## Without the plugin
+The Claude Directory listing also supports Claude apps and Cowork. The remote MCP server needs no ComplyOnSite account or API key. Plugin versions are independent of the MCP server version.
 
-Add the server on its own:
-
-```sh
-claude mcp add --transport http complyonsite https://mcp.complyonsite.com/mcp
-codex mcp add complyonsite --url https://mcp.complyonsite.com/mcp
-```
-
-Other clients, limits and privacy: [complyonsite.com/docs/mcp](https://complyonsite.com/docs/mcp).
-
-## What is in it
-
-```
-.claude-plugin/marketplace.json                 marketplace (read by Claude Code and Codex)
-plugins/complyonsite/.claude-plugin/plugin.json Claude Code manifest
-plugins/complyonsite/.codex-plugin/plugin.json  Codex manifest
-plugins/complyonsite/.mcp.json                  the server address
-plugins/complyonsite/skills/complyonsite/       when to use each tool
-```
-
-Problems or wrong answers: [hello@complyonsite.com](mailto:hello@complyonsite.com?subject=MCP%20plugin).
+Published by [ComplyOnSite](https://complyonsite.com). [Documentation](https://complyonsite.com/docs/mcp) · [Support](https://complyonsite.com/support) · [Privacy](https://complyonsite.com/legal/privacy) · [Terms](https://complyonsite.com/legal/terms) · [MIT licence](LICENSE).

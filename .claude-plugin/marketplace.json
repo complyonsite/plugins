@@ -1,14 +1,31 @@
 {
   "name": "complyonsite",
-  "description": "ComplyOnSite tools for UK construction and waste work.",
-  "owner": { "name": "ComplyOnSite", "url": "https://complyonsite.com" },
+  "description": "Read-only tools and reference data for UK construction and waste compliance.",
+  "owner": {
+    "name": "ComplyOnSite",
+    "url": "https://complyonsite.com"
+  },
   "plugins": [
     {
       "name": "complyonsite",
       "source": "./plugins/complyonsite",
-      "description": "EWC waste codes, waste paperwork, HAVS and noise exposure, first aid, power tool data and HSE construction statistics.",
+      "description": "UK construction and waste tools: EWC code search, waste paperwork guidance, HAVS and noise exposure estimates, first-aid cover, RAMS templates, power-tool data and HSE statistics. No account or API key; read-only.",
       "category": "productivity",
-      "homepage": "https://complyonsite.com/docs/mcp"
+      "homepage": "https://complyonsite.com/docs/mcp",
+      "keywords": [
+        "uk",
+        "construction",
+        "waste",
+        "ewc",
+        "waste-transfer-note",
+        "hazardous-waste",
+        "rams",
+        "havs",
+        "hand-arm-vibration",
+        "noise-exposure",
+        "first-aid",
+        "hse"
+      ]
     }
   ]
 }
